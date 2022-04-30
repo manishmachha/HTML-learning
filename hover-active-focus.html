@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hover active focus</title>
+    <style>
+        input {
+            padding: 6px 12px 6px 12px;
+            border: 1px solid #665544;
+            color: #ffffff;
+        }
+
+        input.submit:hover {
+            background-color: #665544;
+        }
+
+        input.submit:active {
+            background-color: chocolate;
+        }
+
+        input.text {
+            color: green;
+        }
+
+        input.text:focus {
+            color: deeppink;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="http://www.google.com">
+        <input class="text" type="text" name="name1" placeholder="enter anything">
+        <input class="submit" type="submit" value="search">
+    </form>
+</body>
+
+</html>

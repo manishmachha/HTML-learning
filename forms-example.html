@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms example</title>
+</head>
+
+<body>
+    <form action="www.google.com">
+        <fieldset>
+            <legend>
+                <h1>Your details:</h1>
+            </legend>
+            <p>Name: <input type="text" name="name"></p><br>
+            <p>Email: <input type="email" name="email"></p><br>
+        </fieldset>
+        <fieldset>
+            <legend>
+                <h1>Your Review:</h1>
+            </legend>
+            <p>How did you hear about us?</p>
+            <select name="referrer" id="referrer">
+                <option value="google">Google</option>
+                <option value="instagram">Instagram</option>
+                <option value="facebook">Facebook</option>
+            </select>
+            <br>
+            <br>
+            <p>
+                Would you visit again?
+            </p>
+            <p>
+                <label>
+                    <input type="radio" name="visit?" value="yes">
+                    yes
+                </label>
+                <label>
+                    <input type="radio" name="visit?" value="no">
+                    No
+                </label>
+                <label>
+                    <input type="radio" name="visit?" value="maybe">
+                    Maybe
+                </label>
+            </p>
+            <p>Comments:</p>
+            <p>
+                <textarea name="comments" cols="40" rows="4"></textarea>
+            </p>
+            <p>
+                <input type="checkbox" name="check" id="check">
+                Sign me up for email updates
+            </p>
+            <p>
+                <input type="submit" name="submit" id="submit">
+            </p>
+        </fieldset>
+    </form>
+</body>
+
+</html>
